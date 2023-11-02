@@ -20,9 +20,37 @@ main{
 nav{
     width: 200px;
     height: 100%;
+    padding: 5px;
+    position: relative;
     /* debug */
     background-color: bisque;
 }
+
+nav img{
+    width: 100%;
+}
+
+#logo-piccolo{
+    display: none;
+}
+
+#selezione-pagina li{
+    display: flex;
+    list-style: none;
+}
+
+#aggiungi{
+    background-color: white;
+    padding: 10px;
+    display: inline-block;
+}
+
+#istallazione-app{
+   position: absolute;
+   bottom: 0px;
+}
+
+
 /* caratteristiche main-spotify */
 #main-spotify{
     flex-grow: 1;
@@ -73,4 +101,19 @@ footer{
 
 #durata-canzone input{
     width: 100%;
+}
+
+
+/* impostazione schermi telefono */
+@media all and (max-width:550px) {
+    /* impostazioni nav */
+    nav{
+        width: 80px;
+    }
+    #logo-piccolo{
+        display: block;
+    }
+    #logo-grande, .scompari, #playlist {
+        display: none;
+    }
 }
