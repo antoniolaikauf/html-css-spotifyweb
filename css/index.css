@@ -1,0 +1,53 @@
+/* stili generali */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* caratteristiche main */
+main{
+    height: calc(100vh - 80px);
+    display: flex;
+    /* debug */
+    background-color: red;
+}
+/* caratteristiche nav */
+nav{
+    width: 200px;
+    height: 100%;
+    /* debug */
+    background-color: bisque;
+}
+/* caratteristiche main-spotify */
+#main-spotify{
+    flex-grow: 1;
+    height: 100%;
+    position: relative;
+    /* debug */
+    background-color: aqua;
+}
+
+#nav-bar-main{
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    /* debug */
+    background-color: blue;
+}
+
+#conteiner-album{
+    height: calc(100% - 80px);
+    margin-top: 80px;
+    /* debug */
+    background-color: brown;
+}
+/* caratteristiche footer */
+footer{
+    height: 80px;
+    background-color: aliceblue;
+}
