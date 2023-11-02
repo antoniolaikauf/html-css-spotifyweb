@@ -65,7 +65,10 @@ nav img{
 #nav-bar-main{
     height: 80px;
     position: fixed;
-    width: 100%;
+    width: calc(100% - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: end;
     /* debug */
     background-color: blue;
 }
@@ -88,6 +91,7 @@ nav img{
 #pagine-disponibili ul{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .lista-album{
@@ -133,12 +137,27 @@ footer{
     width: 100%;
 }
 
+/* impostazioni 878pixel */
+@media all and (max-width:878px) {
+    .items{
+        width: calc(100% / 4 - 20px);
+    }
+}
+/* impostazioni pixel 639 */
+@media all and (max-width:639px) {
+    .items{
+        width: calc(100% / 2 - 20px);
+    }
+}
 
 /* impostazione schermi telefono */
 @media all and (max-width:550px) {
     /* impostazioni nav */
     nav{
         width: 80px;
+    }
+    #main-spotify, #nav-bar-main{
+        width: calc(100% - 80px);
     }
     #logo-piccolo{
         display: block;
