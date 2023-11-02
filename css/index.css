@@ -9,6 +9,9 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+li{
+    list-style: none;
+}
 /* caratteristiche main */
 main{
     height: calc(100vh - 80px);
@@ -36,7 +39,6 @@ nav img{
 
 #selezione-pagina li{
     display: flex;
-    list-style: none;
 }
 
 #aggiungi{
@@ -50,12 +52,12 @@ nav img{
    bottom: 0px;
 }
 
-
 /* caratteristiche main-spotify */
 #main-spotify{
-    flex-grow: 1;
+    width: calc(100% - 200px);
     height: 100%;
     position: relative;
+    overflow-y: scroll;
     /* debug */
     background-color: aqua;
 }
@@ -69,11 +71,39 @@ nav img{
 }
 
 #conteiner-album{
-    height: calc(100% - 80px);
     margin-top: 80px;
     /* debug */
     background-color: brown;
 }
+
+#upgrade{
+    padding: 10px 30px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: black;
+    display: inline-block;
+}
+
+#pagine-disponibili ul{
+    display: flex;
+    justify-content: center;
+}
+
+.lista-album{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.items{
+    width: calc(100% / 6 - 20px);
+    margin: 0px 10px;
+}
+
+.items img{
+    width: 100%;
+}
+
 /* caratteristiche footer */
 footer{
     height: 80px;
