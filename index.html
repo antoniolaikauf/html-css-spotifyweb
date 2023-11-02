@@ -19,26 +19,29 @@
         <!-- inizio main -->
         <main>
             <nav> <!--nav bar-->
-                <div>
+                <div id="logo">
                     <img src="img/logo.svg" alt="" id="logo-grande">
                     <img src="img/logo-small.svg" alt="" id="logo-piccolo">
                 </div>
                 <div id="selezione-pagina">
                     <ul>
                         <li>
-                            <i class="fa-regular fa-heart evidenziato"></i>
+                            <div id="pagina-attuale">
+                                <!-- attuale pagins -->
+                            </div>
+                            <img src="img/home.svg" alt="">
                             <div class="scompari evidenziato">
                                 home
                             </div>
                         </li>
                         <li>
-                            <i class="fa-regular fa-heart"></i>
+                           <img src="img/search.svg" alt="">
                             <div class="scompari">
                                 home
                             </div>
                         </li>
                         <li>
-                            <i class="fa-regular fa-heart"></i>
+                            <img src="img/libreria.svg" alt="">
                             <div class="scompari">
                                 home
                             </div>
@@ -57,15 +60,15 @@
                     </ul>
                 </div>
                 <div id="istallazione-app">
-                    <div>
-                        <i class="fa-regular fa-heart"></i>
+                    <div id="rimpicciolita">
+                       <img src="img/download.svg" alt="" >
                        <span class="scompari">istallazione app</span>
                     </div>
                     <div id="separino">
                         <!-- separino -->
                     </div>
                     <blockquote>
-                        <i class="fa-regular fa-heart"></i>
+                        <img src="img/profile.svg" alt="" id="bg-colorato">
                         <span class="scompari evidenziato">jhon quote</span>
                     </blockquote>
                 </div>
@@ -74,10 +77,15 @@
                 <div id="nav-bar-main"><!--nav bar dentro main dpotify-->
                     <a href="" id="upgrade" class="evidenziato">sono un bottone</a>
                 </div>
-                <div id="conteiner-album"> <!--container album canzoni-->
+                <div id="conteiner-album"> 
                     <div id="pagine-disponibili">
                         <ul>
-                            <li>in evidenza</li>
+                            <li id="attuale">
+                                in evidenza
+                                <div>
+                                    <!-- attuale pagina -->
+                                </div>
+                            </li>
                             <li>in evidenza</li>
                             <li>in evidenza</li>
                             <li>in evidenza</li>
@@ -86,62 +94,92 @@
                         </ul>
                     </div>              
                     <h2 class="evidenziato">sono un titolo</h2>
-                    <div class="lista-album">
+                    <div class="row"> <!--container album canzoni -->
                         <div class="items">
-                            <img src="img/cure.jpeg" alt="">
+                            <div class="immagine-album">
+                                <i class="fa-regular fa-heart"></i>
+                                <img src="img/cure.jpeg" alt="">
+                            </div>
                             <h4 class="evidenziato">titolo album</h4>
                             <div>testo</div>
                         </div>
                         <div class="items">
-                            <img src="img/cure.jpeg" alt="">
+                            <div class="immagine-album">
+                                <i class="fa-regular fa-heart"></i>
+                                <img src="img/cure.jpeg" alt="">
+                            </div>
                             <h4 class="evidenziato">titolo album</h4>
                             <div>testo</div>
                         </div>
                         <div class="items">
-                            <img src="img/cure.jpeg" alt="">
+                            <div class="immagine-album">
+                                <i class="fa-regular fa-heart"></i>
+                                <img src="img/cure.jpeg" alt="">
+                            </div>
                             <h4 class="evidenziato">titolo album</h4>
                             <div>testo</div>
                         </div>
                         <div class="items">
-                            <img src="img/cure.jpeg" alt="">
+                            <div class="immagine-album">
+                                <i class="fa-regular fa-heart"></i>
+                                <img src="img/cure.jpeg" alt="">
+                            </div>
                             <h4 class="evidenziato">titolo album</h4>
                             <div>testo</div>
                         </div>
                         <div class="items">
-                            <img src="img/cure.jpeg" alt="">
+                            <div class="immagine-album">
+                                <i class="fa-regular fa-heart"></i>
+                                <img src="img/cure.jpeg" alt="">
+                            </div>
                             <h4 class="evidenziato">titolo album</h4>
                             <div>testo</div>
                         </div>
                         <div class="items">
-                            <img src="img/cure.jpeg" alt="">
+                            <div class="immagine-album">
+                                <i class="fa-regular fa-heart"></i>
+                                <img src="img/cure.jpeg" alt="">
+                            </div>
                             <h4 class="evidenziato">titolo album</h4>
                             <div>testo</div>
                         </div>
                     </div>
                     <h2 class="evidenziato">titolo</h2>
                     <div>descrizione testo</div>
-                    <div class="lista-album">
+                    <div class="row">
                         <div class="items">
-                            <img src="img/cure.jpeg" alt="">
+                            <div class="immagine-album">
+                                <i class="fa-regular fa-heart"></i>
+                                <img src="img/cure.jpeg" alt="">
+                            </div>
                             <h4 class="evidenziato">titolo album</h4>
                             <div>testo</div>
                         </div>
                         <div class="items">
-                            <img src="img/cure.jpeg" alt="">
+                            <div class="immagine-album">
+                                <i class="fa-regular fa-heart"></i>
+                                <img src="img/cure.jpeg" alt="">
+                            </div>
                             <h4 class="evidenziato">titolo album</h4>
                             <div>testo</div>
                         </div>
                     </div>
                     <h2 class="evidenziato">titolo</h2>
                     <div>descrizione testo</div>
-                    <div class="lista-album artisti-popolari">
+                    <div class="row artisti-popolari">
                         <div class="items">
-                            <img src="img/cure.jpeg" alt="">
+                            <div class="immagine-album">
+                                <i class="fa-regular fa-heart"></i>
+                                <img src="img/cure.jpeg" alt="">
+                            </div>
                             <h4 class="evidenziato">titolo album</h4>
                             <div>testo</div>
                         </div>
                         <div class="items">
-                            <img src="img/cure.jpeg" alt="">
+                            <div class="immagine-album">
+                                <i class="fa-regular fa-heart"></i>
+                                <img src="img/cure.jpeg" alt="">
+                            </div>
                             <h4 class="evidenziato">titolo album</h4>
                             <div>testo</div>
                         </div>
@@ -155,7 +193,7 @@
                 <img src="img/sinister.jpeg" alt="">
                 <div id="titolo-canzone">
                     <strong class="evidenziato">sinister</strong>
-                    <div>brano nome</div>
+                    <div><a href="">brano nome</a></div>
                 </div>
                 <div>
                     <i class="fa-regular fa-heart"></i>
@@ -164,26 +202,37 @@
             </div>
             <div id="controllo-canzone"><!--col-->
                 <div>
-                    <i class="fa-regular fa-folder"></i>
-                    <i class="fa-regular fa-folder"></i>
-                    <i class="fa-regular fa-folder"></i>
-                    <i class="fa-regular fa-folder"></i>
-                    <i class="fa-regular fa-folder"></i>
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-left"></i>
                 </div>
                 <div id="durata-canzone">
                     <div class="evidenziato">0.25</div>
-                    <input type="range">
+                    <div class="barra" >
+                        <div class="scorritore">
+                            <span class="rotondo"></span>
+                        </div>
+                    </div>
                     <div class="evidenziato">5.47</div>
                 </div>
             </div>
             <div id="volume"><!--col-->
-                <i class="fa-regular fa-heart evidenziato"></i>
-                <i class="fa-regular fa-heart evidenziato"></i>
-                <i class="fa-regular fa-heart evidenziato"></i>
-                <input type="range">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-tv"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="barra" >
+                    <div class="scorritore">
+                        <span class="rotondo"></span>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
-    
+    <!-- per domani sistemare tutto il testo , vedere se si riesce a trovare un modo migliore per 
+    fare la barra , provare a vedere se si riesce a togliere un po di css , e sistemare istallazione app
+perche quando si rimpicciolicce dall'alto causa un po di problemi provare  a dare misure in altezza dentro al nav perche 
+con position absoluta causa problemi -->
 </body>
 </html>
