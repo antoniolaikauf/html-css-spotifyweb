@@ -8,6 +8,7 @@
 :root{
     font-family: 'Montserrat', sans-serif;
     color: rgba(255, 255, 255, 0.587);
+    font-size: 10px;
 }
 
 li{
@@ -205,9 +206,9 @@ footer{
     background-color: #282828;
 }
 /* caratteristiche div dentro footer */
-#musica-in-ascolto, #durata-canzone{
-    display: flex;
+#musica-in-ascolto, #durata-canzone, #volume{
     align-items: center;
+    display: flex;
 }
 /* caratteristiche contenuto musica in ascolto */
 #musica-in-ascolto img{
@@ -226,7 +227,7 @@ footer{
 /* caratteristiche contenuto controllo canzone */
 #controllo-canzone{
     text-align: center;
-    width: 25%;
+    width: 35%;
     color: white;
 }
 
@@ -238,15 +239,9 @@ footer{
 #controllo-canzone .fa-circle-play{
     font-size: 30px;
 }
-
-#durata-canzone input{
-    width: 100%;
-    margin: 0px 10px;
-}
 /* caratteristiche contenuto volume */
-#volume{
-    display: flex;
-    width: 15%;
+#volume, #musica-in-ascolto{
+    width: 25%;
 }
 #volume i{
     margin: 0px 5px;
@@ -338,3 +333,6 @@ footer i:hover{
         width: calc(100% - 50px);
     }
 }
+
+/* se si vuole utilizzare testo piu grande è sinistra destra 25% e mezzo 40% */
+
