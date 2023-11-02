@@ -29,6 +29,7 @@ nav{
     padding: 5px;
     position: relative;
     background-color: #000000;
+    overflow: hidden;
 }
 
 nav img{
@@ -39,14 +40,18 @@ nav img{
     display: none;
 }
 
-#selezione-pagina li{
+#selezione-pagina ul>li{
     display: flex;
+    margin: 5px 0;
+    align-items: center;
 }
+
 
 #aggiungi{
     background-color: white;
     padding: 10px;
     display: inline-block;
+    color: black;
 }
 
 #istallazione-app{
@@ -54,6 +59,10 @@ nav img{
    bottom: 0px;
 }
 
+#separino{
+    margin: 5px 0;
+    border: 1px solid white;
+}
 /* caratteristiche main-spotify */
 #main-spotify{
     width: calc(100% - 200px);
@@ -75,6 +84,7 @@ nav img{
 
 #conteiner-album{
     margin-top: 80px;
+    padding: 5px;
 }
 
 #upgrade{
@@ -93,6 +103,10 @@ nav img{
     flex-wrap: wrap;
 }
 
+#pagine-disponibili li{
+    margin: 0px 5px;
+}
+
 .lista-album{
     display: flex;
     flex-wrap: wrap;
@@ -101,6 +115,7 @@ nav img{
 .items{
     width: calc(100% / 6 - 20px);
     margin: 0px 10px;
+    text-align: center;
 }
 
 .items img{
@@ -120,10 +135,15 @@ footer{
     padding: 5px;
     background-color: #282828;
 }
-
+/* caratteristiche div dentro footer */
 #musica-in-ascolto, #durata-canzone{
     display: flex;
     align-items: center;
+}
+
+#titolo-canzone{
+    margin-left: 5px;
+    margin-right: 25px;
 }
 
 #musica-in-ascolto img{
@@ -138,7 +158,18 @@ footer{
 
 #durata-canzone input{
     width: 100%;
+    margin: 0px 10px;
 }
+
+#controllo-canzone i{
+    margin: 0px 20px;
+    margin-bottom: 10px;
+}
+
+#volume i{
+    margin: 0px 5px;
+}
+
 
 /* impostazioni 878pixel */
 @media all and (max-width:878px) {
@@ -157,15 +188,18 @@ footer{
 @media all and (max-width:550px) {
     /* impostazioni nav */
     nav{
-        width: 80px;
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     #main-spotify, #nav-bar-main{
-        width: calc(100% - 80px);
+        width: calc(100% - 50px);
     }
     #logo-piccolo{
         display: block;
     }
-    #logo-grande, .scompari, #playlist {
+    #logo-grande, .scompari, #playlist, #separino {
         display: none;
     }
 }
