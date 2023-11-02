@@ -49,5 +49,28 @@ nav{
 /* caratteristiche footer */
 footer{
     height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    /* debug */
     background-color: aliceblue;
+}
+
+#musica-in-ascolto, #durata-canzone{
+    display: flex;
+    align-items: center;
+}
+
+#musica-in-ascolto img{
+    width: 50px;
+}
+
+#controllo-canzone{
+    text-align: center;
+    width: 40%;
+}
+
+#durata-canzone input{
+    width: 100%;
 }
