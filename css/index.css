@@ -23,7 +23,7 @@ a{
     text-decoration: none;
     color: rgba(255, 255, 255, 0.587);
 }
-
+/* barra scroll caratteristiche */
 #playlist::-webkit-scrollbar, #main-spotify::-webkit-scrollbar {
     display: none;
   }
@@ -42,14 +42,18 @@ nav{
     overflow: hidden;
 }
 
+#logo img, .items img{
+    width: 100%;
+}
+/* immagine all'attivazione di schermo 550 px */
+#logo-piccolo{
+    display: none;
+}
+
 nav li{
     display: flex;
     padding: 5px 0;
     align-items: center;
-}
-
-#logo img{
-    width: 100%;
 }
 
 #selezione-pagina img, #bg-colorato {
@@ -63,7 +67,14 @@ nav li{
     display: inline-block;
     color: black;
 }
-
+/* caratteristiche pagina attuale */
+#pagina-attuale{
+    border: 1px solid #beff9d;
+    height: 20px;
+    position: absolute;
+    left: 0px;
+}
+/* inizio caratteristiche dell'account dell'utente */
 #istallazione-app{
    height: 80px;
 }
@@ -88,18 +99,7 @@ nav li{
     margin: 5px 0;
     border: 1px solid white;
 }
-/* caratteristiche pagina attuale */
-#pagina-attuale{
-    border: 1px solid #beff9d;
-    height: 20px;
-    position: absolute;
-    left: 0px;
-}
-/* immagine all'attivazione di schermo 550 px */
-#logo-piccolo{
-    display: none;
-}
-/* altezze tutte-playlist e div all'interno di esso */
+/* altezze classe tutte-playlist e div all'interno di esso */
 #tutte-playlist{
     height: calc(100% - 80px);
     overflow: hidden;
@@ -125,7 +125,7 @@ nav li{
     overflow-y: scroll;
     background-color: #141922;
 }
-
+/* caratteristiche nav-bar upgrade account */
 #nav-bar-main{
     height: 80px;
     position: fixed;
@@ -146,14 +146,14 @@ nav li{
     margin-right: 20px;
     z-index: 500;
 }
-/* inizio contenitore con dentro tutti gli album */
+/* inizio contenitore con dentro tutti gli album e canzone salvate*/
 #conteiner-album{
     margin-top: 80px;
     padding: 10px;
 }
 
-#conteiner-album h2, .row{
-    margin: 15px 0;
+#conteiner-album h2, .row, .items h4{
+    margin: 10px 0;
 }
 /* caratteristiche pagine disponibili */
 #pagine-disponibili ul{
@@ -182,14 +182,6 @@ nav li{
     text-align: center;
 }
 
-.items img{
-    width: 100%;
-}
-
-.items h4{
-    margin: 10px 0;
-}
-
 .immagine-album{
     position: relative;
 }
@@ -216,9 +208,14 @@ footer{
     padding: 5px;
     background-color: #282828;
 }
+
+footer i{
+    margin: 0px 8px;
+}
+
 /* caratteristiche della barra dentro al footer */
 .barra{
-    margin: 0px 5px;
+    margin: 5px;
     height: 10px;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.218);
@@ -243,7 +240,7 @@ footer{
     left: calc(100% - 8px);
 }
 /* caratteristiche div dentro footer */
-#musica-in-ascolto, #durata-canzone, #volume{
+#musica-in-ascolto, #durata-canzone, #volume, #display-canzone{
     align-items: center;
     display: flex;
 }
@@ -258,14 +255,12 @@ footer{
 }
 /* caratteristiche contenuto controllo canzone */
 #controllo-canzone{
-    text-align: center;
-    width: 35%;
+    width: 33%;
     color: white;
 }
 
-#controllo-canzone i{
-    margin: 0px 10px;
-    margin-bottom: 10px;
+#display-canzone{
+    justify-content: center;
 }
 
 #controllo-canzone .fa-circle-play{
@@ -275,10 +270,8 @@ footer{
 #volume, #musica-in-ascolto{
     width: 25%;
 }
-#volume i, #musica-in-ascolto i{
-    margin: 0px 5px;
-}
 /* componenti hover */
+/* caratteristiche hover immagine dentro conteiner album */
 .immagine-album:hover img{
     filter: brightness(0.5);
 }
@@ -287,12 +280,12 @@ footer{
     display: block;
     z-index: 400;
 }
-
+/* caratteristiche hover pulsante upgrade  */
 #upgrade:hover{
     transform: scale(1.1);
 }
-
-li>a:hover, .scompari:hover{
+/* caratteristiche colore tag dentro progetto */
+li>a:hover, .scompari:hover, #musica-in-ascolto i:hover{
     color: white;
 }
 
@@ -300,16 +293,11 @@ li>a:hover, .scompari:hover{
     background-color: white;
 }
 
-footer i:hover{
-    transform: scale(1.2);
-    color: white;
-}
-
 #titolo-canzone a:hover{
     color: white;
     text-decoration: underline;
 }
-
+/* caratteristiche barra dentro footer */
 .barra:hover .scorritore{
     background-color: #beff9d;
 }
@@ -317,20 +305,20 @@ footer i:hover{
 .barra:hover .rotondo{
     background-color: white;
 }
-/* impostazioni 878pixel */
+/* impostazioni 878px */
 @media all and (max-width:878px) {
     .items{
         width: calc(100% / 4 - 20px);
     }
 }
-/* impostazioni pixel 639 */
+/* impostazioni 639px */
 @media all and (max-width:639px) {
     .items{
         width: calc(100% / 2 - 20px);
     }
 }
 
-/* impostazione schermi telefono */
+/* impostazione 550px */
 @media all and (max-width:550px) {
     /* caratteristiche nav */
     nav{
@@ -349,6 +337,7 @@ footer i:hover{
     #logo-piccolo{
         display: block;
     }
+    /* caratteristiche tag dentro istallazione app */
     #rimpicciolita{
         justify-content: center;
     }
@@ -359,7 +348,7 @@ footer i:hover{
         width: 100%;
     }
     /* caratteristiche che scompaiono  */
-    #logo-grande, .scompari, #playlist, #separino, #pagina-attuale {
+    #logo-grande, .tag-scomparso {
         display: none;
     }
     /* caratteristiche main spotify  */
@@ -367,9 +356,3 @@ footer i:hover{
         width: calc(100% - 50px);
     }
 }
-
-/* @media all and (max-height:550px) {
-    #playlist{
-        overflow: auto;
-    }
-} */

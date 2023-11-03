@@ -14,24 +14,22 @@
     <title>Document</title>
 </head>
 <body>
-
-    <div> <!--contenitore-->
         <!-- inizio main -->
         <main>
-            <nav> <!--nav bar-->
+            <nav> <!--nav bar per playlist salvate-->
                 <div id="tutte-playlist">
-                    <div id="logo">
+                    <div id="logo"> <!--loghi della pagina-->
                         <img src="img/logo.svg" alt="immagine logo" id="logo-grande">
                         <img src="img/logo-small.svg" alt="immagine logo" id="logo-piccolo">
                     </div>
-                    <ul id="selezione-pagina">
+                    <ul id="selezione-pagina"> <!--possibili pagine -->
                         <li>
-                            <div id="pagina-attuale">
+                            <div id="pagina-attuale" class="tag-scomparso">
                                 <!-- attuale pagina -->
                             </div>
                             <img src="img/home.svg" alt="immagine home">
                            <a href="#">
-                                <div class="scompari evidenziato">
+                                <div class="tag-scomparso evidenziato">
                                     home
                                 </div>
                            </a>
@@ -39,7 +37,7 @@
                         <li>
                            <img src="img/search.svg" alt="immagine home">
                            <a href="#">
-                            <div class="scompari">
+                            <div class="tag-scomparso">
                                 cerca
                             </div>
                            </a>
@@ -47,13 +45,13 @@
                         <li>
                             <img src="img/libreria.svg" alt="immagine home">
                            <a href="#">
-                                <div class="scompari">
+                                <div class="tag-scomparso">
                                     la tua libreria
                                 </div>
                            </a>
                         </li>
                     </ul>
-                    <ul id="playlist">
+                    <ul id="playlist" class="tag-scomparso"> <!--playlist salvate dall'utente-->
                         <li><h3 class="evidenziato">playlist</h3></li>
                         <li>
                             <a href="#">
@@ -70,28 +68,28 @@
                         <li><a href="#">Nome Playlist</a></li>
                     </ul>  
                 </div>
-                <div id="istallazione-app">
+                <div id="istallazione-app"> <!--caratteristiche dell'acaount utente -->
                    <ul>
                         <li id="rimpicciolita">
                             <img src="img/download.svg" alt="immagine istallazione" >
-                            <a href="#" class="scompari">istallazione app</a>
+                            <a href="#" class="tag-scomparso">istallazione app</a>
                         </li>
-                        <li id="separino">
+                        <li id="separino" class="tag-scomparso">
 
                         </li>
                         <li>
                             <img src="img/profile.svg" alt="immagine profilo account" id="bg-colorato">
-                            <a href="#" class="scompari evidenziato">jhon Doe</a>
+                            <a href="#" class="tag-scomparso evidenziato">jhon Doe</a>
                         </li>
                    </ul>
                 </div>
             </nav>
             <div id="main-spotify"> <!--main spotify-->
-                <div id="nav-bar-main"><!--nav bar dentro main dpotify-->
+                <div id="nav-bar-main"><!--nav bar per fare upgrade accountmain dpotify-->
                     <a href="#" id="upgrade" class="evidenziato">effettua l'upgrade</a>
                 </div>
-                <div id="conteiner-album"> 
-                    <div id="pagine-disponibili">
+                <div id="conteiner-album"> <!--tutte le canzoni salvate -->
+                    <div id="pagine-disponibili"> <!--possibili pagine -->
                         <ul>
                             <li id="attuale">
                                <a href="#"> in evidenza</a>
@@ -198,7 +196,7 @@
         </main>
         <!-- inizio footer -->
         <footer>
-            <div id="musica-in-ascolto"> <!--col-->
+            <div id="musica-in-ascolto"> <!--col della canzone attuale-->
                 <img src="img/sinister.jpeg" alt="immagine album in ascolto">
                 <div id="titolo-canzone">
                     <strong class="evidenziato">sinister</strong>
@@ -209,8 +207,8 @@
                     <a href="#"><i class="fa-regular fa-folder"></i></a>
                 </div>
             </div>
-            <div id="controllo-canzone"><!--col-->
-                <div>
+            <div id="controllo-canzone"><!--col per play musica-->
+                <div id="display-canzone">
                     <i class="fa-solid fa-shuffle"></i>
                     <i class="fa-solid fa-backward-step"></i>
                     <i class="fa-regular fa-circle-play"></i>
@@ -227,10 +225,10 @@
                     <div class="evidenziato">4.35</div>
                 </div>
             </div>
-            <div id="volume"><!--col-->
-                <a href="#"><i class="fa-solid fa-bars"></i></a>
-                <a href="#"><i class="fa-solid fa-tv"></i></a>
-                <a href="#"> <i class="fa-solid fa-volume-high"></i></a>
+            <div id="volume"><!--col per volume musica-->
+                <a href="#"><i class="fa-solid fa-bars evidenziato"></i></a>
+                <a href="#"><i class="fa-solid fa-tv evidenziato"></i></a>
+                <a href="#"> <i class="fa-solid fa-volume-high evidenziato"></i></a>
                 <div class="barra" >
                     <div class="scorritore">
                         <span class="rotondo"></span>
@@ -238,6 +236,5 @@
                 </div>
             </div>
         </footer>
-    </div>
 </body>
 </html>
