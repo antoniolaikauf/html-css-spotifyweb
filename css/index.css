@@ -21,6 +21,7 @@ li{
 
 a{
     text-decoration: none;
+    color: rgba(255, 255, 255, 0.587);
 }
 
 #playlist::-webkit-scrollbar, #main-spotify::-webkit-scrollbar {
@@ -51,7 +52,7 @@ nav li{
     width: 100%;
 }
 
-#selezione-pagina img {
+#selezione-pagina img, #bg-colorato {
     width: 13%;
     margin-right: 5px;
 }
@@ -67,14 +68,19 @@ nav li{
    height: 80px;
 }
 
+#istallazione-app .evidenziato{
+    font-size: 15px;
+    font-weight: bold;
+}
+
 #rimpicciolita img{
     width: 8%;
+    margin-right: 5px;
 }
 
 #bg-colorato{
     background-color: gray;
     border-radius: 50%;
-    width: 13%;
 }
 
 #separino{
@@ -146,6 +152,10 @@ nav li{
     padding: 10px;
 }
 
+#conteiner-album h2, .row{
+    margin: 15px 0;
+}
+/* caratteristiche pagine disponibili */
 #pagine-disponibili ul{
     display: flex;
     justify-content: center;
@@ -160,6 +170,7 @@ nav li{
     border: 1px solid #beff9d;
     margin: 0px 20%;
 }
+/* caratteristiche row */
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -173,6 +184,10 @@ nav li{
 
 .items img{
     width: 100%;
+}
+
+.items h4{
+    margin: 10px 0;
 }
 
 .immagine-album{
@@ -208,6 +223,7 @@ footer{
     width: 100%;
     background-color: rgba(255, 255, 255, 0.218);
     border-radius: 25px;
+    cursor: pointer;
 }
 
 .scorritore{
@@ -240,11 +256,6 @@ footer{
     margin-left: 5px;
     margin-right: 25px;
 }
-
-#titolo-canzone a{
-    color: rgba(255, 255, 255, 0.587);
-
-}
 /* caratteristiche contenuto controllo canzone */
 #controllo-canzone{
     text-align: center;
@@ -264,7 +275,7 @@ footer{
 #volume, #musica-in-ascolto{
     width: 25%;
 }
-#volume i{
+#volume i, #musica-in-ascolto i{
     margin: 0px 5px;
 }
 /* componenti hover */
@@ -281,7 +292,7 @@ footer{
     transform: scale(1.1);
 }
 
-ul>li:hover, .scompari:hover{
+li>a:hover, .scompari:hover{
     color: white;
 }
 
@@ -331,6 +342,9 @@ footer i:hover{
     #selezione-pagina img{
         width: 100%;
         margin: 0px;
+    }
+    #logo{
+        height: unset;
     }
     #logo-piccolo{
         display: block;
