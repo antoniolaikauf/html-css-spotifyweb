@@ -168,7 +168,10 @@ nav li{
 
 #attuale>div{
     border: 1px solid #beff9d;
-    margin: 0px 20%;
+    width: 30%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
 }
 /* caratteristiche row */
 .row{
@@ -315,6 +318,8 @@ li>a:hover, .scompari:hover, #musica-in-ascolto i:hover{
     #pagine-disponibili li{
         width: calc(100% / 5 - 10px);
         margin-bottom: 10px;
+        font-size: 12px;
+        text-align: center;
     }
 }
 /* impostazioni 639px */
