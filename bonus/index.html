@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- link css -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=PT+Sans&display=swap" rel="stylesheet">
+    <!-- link font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- inizio main -->
+        <main>
+            <nav> <!--nav bar per playlist salvate-->
+                <div id="tutte-playlist">
+                    <div id="logo"> <!--loghi della pagina-->
+                        <img src="img/logo.svg" alt="immagine logo" id="logo-grande">
+                        <img src="img/logo-small.svg" alt="immagine logo" id="logo-piccolo">
+                    </div>
+                    <ul id="selezione-pagina"> <!--possibili pagine -->
+                        <li>
+                            <div id="pagina-attuale" class="tag-scomparso">
+                                <!-- attuale pagina -->
+                            </div>
+                            <img src="img/home.svg" alt="immagine home">
+                           <a href="#">
+                                <div class="tag-scomparso evidenziato">
+                                    home
+                                </div>
+                           </a>
+                        </li>
+                        <li>
+                           <img src="img/search.svg" alt="immagine home">
+                           <a href="#">
+                            <div class="tag-scomparso">
+                                cerca
+                            </div>
+                           </a>
+                        </li>
+                        <li>
+                            <img src="img/libreria.svg" alt="immagine home">
+                           <a href="#">
+                                <div class="tag-scomparso">
+                                    la tua libreria
+                                </div>
+                           </a>
+                        </li>
+                    </ul>
+                    <ul id="playlist" class="tag-scomparso"> <!--playlist salvate dall'utente-->
+                        <li><h3 class="evidenziato">playlist</h3></li>
+                        <li>
+                            <a href="#">
+                                <span id="aggiungi"><i class="fa-solid fa-plus"></i></span>
+                                Crea playlist
+                            </a>
+                        </li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                    </ul>  
+                </div>
+                <div id="istallazione-app"> <!--caratteristiche dell'acaount utente -->
+                   <ul>
+                        <li id="rimpicciolita">
+                            <img src="img/download.svg" alt="immagine istallazione" >
+                            <a href="#" class="tag-scomparso">istallazione app</a>
+                        </li>
+                        <li id="separino" class="tag-scomparso">
+
+                        </li>
+                        <li>
+                            <img src="img/profile.svg" alt="immagine profilo account" id="bg-colorato">
+                            <a href="#" class="tag-scomparso evidenziato">jhon Doe</a>
+                        </li>
+                   </ul>
+                </div>
+            </nav>
+            <div id="main-spotify"> <!--main spotify-->
+                <div id="nav-bar-main"><!--nav bar per fare upgrade accountmain dpotify-->
+                    <a href="#" id="upgrade" class="evidenziato">effettua l'upgrade</a>
+                </div>
+                <div id="conteiner-album"> <!--tutte le canzoni salvate -->
+                    <div id="pagine-disponibili"> <!--possibili pagine -->
+                        <ul>
+                            <li id="attuale">
+                               <a href="#"> in evidenza</a>
+                                <div>
+                                    <!-- attuale pagina -->
+                                </div>
+                            </li>
+                            <li><a href="#"> podcast</a></li>
+                            <li><a href="#">classifiche</a></li>
+                            <li><a href="#">generi e mood</a></li>
+                            <li><a href="#">nuove uscite</a></li>
+                            <li> <a href="#">scopri</a></li>
+                        </ul>
+                    </div>              
+                    <h2 class="evidenziato">Recently played</h2>
+                    <div class="row" id="lunga"> <!--container album canzoni prima row con ricerche recenti-->
+                        <div class="items">
+                            <div class="immagine-album">
+                                 <i class="fa-regular fa-circle-play"></i>
+                                <img src="img/metal_lifting.jpg" alt="immagine album">
+                            </div>
+                            <h4 class="evidenziato">Hevy Metal</h4>
+                            <div>subtitle</div>
+                        </div>
+                        <div class="items">
+                            <div class="immagine-album">
+                                 <i class="fa-regular fa-circle-play"></i>
+                                <img src="img/stranger.jpeg" alt="immagine album">
+                            </div>
+                            <h4 class="evidenziato">Strange Things&#46; Vol&#46; &#49; &#40; a Netflix Original Series Soundtrack&#41;</h4>
+                            <div>Kyle Dixon &#38; Michael Steam</div>
+                        </div>
+                        <div class="items">
+                            <div class="immagine-album">
+                                 <i class="fa-regular fa-circle-play"></i>
+                                <img src="img/aquietplace.jpeg" alt="immagine album">
+                            </div>
+                            <h4 class="evidenziato"> A quiet place</h4>
+                            <div>subtitle</div>
+                        </div>
+                        <div class="items">
+                            <div class="immagine-album">
+                                 <i class="fa-regular fa-circle-play"></i>
+                                <img src="img/split.jpeg" alt="immagine album">
+                            </div>
+                            <h4 class="evidenziato">split</h4>
+                            <div>subtitle</div>
+                        </div>
+                        <div class="items">
+                            <div class="immagine-album">
+                                 <i class="fa-regular fa-circle-play"></i>
+                                <img src="img/cure.jpeg" alt="immagine album">
+                            </div>
+                            <h4 class="evidenziato">A cure for wellness</h4>
+                            <div>subtitle</div>
+                        </div>
+                        <div class="items">
+                            <div class="immagine-album">
+                                 <i class="fa-regular fa-circle-play"></i>
+                                <img src="img/sinister.jpeg" alt="immagine album">
+                            </div>
+                            <h4 class="evidenziato">sinister</h4>
+                            <div>subtitle</div>
+                        </div>
+                    </div>
+                    <h2 class="evidenziato">Creato per Jhon Doe</h2>
+                    <div>piu ascolti &#44; pi&#249; saranno accurati i suggerimenti</div>
+                    <div class="row"> <!--container album canzoni primarow creato per account personale-->
+                        <div class="items">
+                            <div class="immagine-album">
+                                 <i class="fa-regular fa-circle-play"></i>
+                                <img src="img/radar.jpeg" alt="immagine album">
+                            </div>
+                            <h4 class="evidenziato">Release Radar</h4>
+                        </div>
+                        <div class="items">
+                            <div class="immagine-album">
+                                 <i class="fa-regular fa-circle-play"></i>
+                                <img src="img/mixdaily.jpeg" alt="immagine album">
+                            </div>
+                            <h4 class="evidenziato">Daily Mix &#49;</h4>
+                        </div>
+                    </div>
+                    <h2 class="evidenziato">Artisti piu ascoltati</h2>
+                    <div>piu ascolti &#44; pi&#249; saranno accurati i suggerimenti</div>
+                    <div class="row artisti-popolari"> <!--container album canzoni row con artisti importanti-->
+                        <div class="items">
+                            <div class="immagine-album">
+                                 <i class="fa-regular fa-circle-play"></i>
+                                <img src="img/youg.jpeg" alt="immagine album">
+                            </div>
+                            <h4 class="evidenziato">Lana del Ray</h4>
+                        </div>
+                        <div class="items">
+                            <div class="immagine-album">
+                                 <i class="fa-regular fa-circle-play"></i>
+                                <img src="img/einaudi.jpeg" alt="immagine album">
+                            </div>
+                            <h4 class="evidenziato">Ludovico Elnaudi</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- inizio footer -->
+        <footer>
+            <div id="musica-in-ascolto"> <!--col della canzone attuale-->
+                <img src="img/sinister.jpeg" alt="immagine album in ascolto">
+                <div id="titolo-canzone">
+                    <strong class="evidenziato">sinister</strong>
+                    <div><a href="#">brano nome</a></div>
+                </div>
+                <div>
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-regular fa-folder"></i></a>
+                </div>
+            </div>
+            <div id="controllo-canzone"><!--col per play musica-->
+                <div id="display-canzone">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-left"></i>
+                </div>
+                <div id="durata-canzone">
+                    <div class="evidenziato">0.00</div>
+                    <div class="barra" >
+                        <div class="scorritore">
+                            <span class="rotondo"></span>
+                        </div>
+                    </div>
+                    <div class="evidenziato">4.35</div>
+                </div>
+            </div>
+            <div id="volume"><!--col per volume musica-->
+                <a href="#"><i class="fa-solid fa-bars evidenziato"></i></a>
+                <a href="#"><i class="fa-solid fa-tv evidenziato"></i></a>
+                <a href="#"> <i class="fa-solid fa-volume-high evidenziato"></i></a>
+                <div class="barra" >
+                    <div class="scorritore">
+                        <span class="rotondo"></span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

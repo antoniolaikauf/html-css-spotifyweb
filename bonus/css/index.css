@@ -1,0 +1,419 @@
+/* stili generali */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 255, 255, 0.587);
+    font-size: 10px;
+}
+
+li{
+    list-style: none;
+}
+
+.evidenziato{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.587);
+}
+/* barra scroll caratteristiche */
+#playlist::-webkit-scrollbar, #main-spotify::-webkit-scrollbar {
+    display: none;
+  }
+/* caratteristiche main */
+main{
+    height: calc(100vh - 80px);
+    display: flex;
+}
+/* caratteristiche nav dento main */
+nav{
+    width: 200px;
+    height: 100%;
+    padding: 10px 5px 0px;
+    position: relative;
+    background-color: #000000;
+    overflow: hidden;
+}
+
+#logo img, .items img{
+    width: 100%;
+}
+/* immagine all'attivazione di schermo 550 px */
+#logo-piccolo{
+    display: none;
+}
+
+nav li{
+    display: flex;
+    padding: 5px 0;
+    align-items: center;
+}
+
+#selezione-pagina img, #bg-colorato {
+    width: 13%;
+    margin-right: 5px;
+}
+
+#aggiungi{
+    background-color: rgba(255, 255, 255, 0.587);
+    padding: 10px;
+    display: inline-block;
+    color: black;
+}
+/* caratteristiche pagina attuale */
+#pagina-attuale{
+    border: 1px solid #beff9d;
+    height: 20px;
+    position: absolute;
+    left: 0px;
+}
+/* inizio caratteristiche dell'account dell'utente */
+#istallazione-app{
+   height: 80px;
+}
+
+#istallazione-app .evidenziato{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#rimpicciolita img{
+    width: 8%;
+    margin-right: 5px;
+}
+
+#bg-colorato{
+    background-color: gray;
+    border-radius: 50%;
+}
+
+#separino{
+    padding: 0px;
+    margin: 5px 0;
+    border: 1px solid white;
+}
+/* altezze classe tutte-playlist e div all'interno di esso */
+#tutte-playlist{
+    height: calc(100% - 80px);
+    overflow: hidden;
+}
+
+#logo{
+    height: 60px;
+}
+
+#seleziona-pagina{
+    height: 105px;
+}
+
+#playlist{
+    height: calc(100% - 175px);
+    overflow-y: scroll;
+}
+/* caratteristiche main-spotify */
+#main-spotify{
+    width: calc(100% - 200px);
+    height: 100%;
+    position: relative;
+    overflow-y: scroll;
+    background-color: #141922;
+}
+/* caratteristiche nav-bar upgrade account */
+#nav-bar-main{
+    height: 80px;
+    position: fixed;
+    width: calc(100% - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: #080b128a;
+}
+/* bottone per fare upgrade */
+#upgrade{
+    padding: 10px 30px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 25px;
+    background-color: black;
+    display: inline-block;
+    margin-right: 20px;
+    z-index: 500;
+}
+/* inizio contenitore con dentro tutti gli album e canzone salvate*/
+#conteiner-album{
+    margin-top: 80px;
+    padding: 10px;
+}
+
+#conteiner-album h2, .row, .items h4{
+    margin: 10px 0;
+}
+/* caratteristiche pagine disponibili */
+#pagine-disponibili ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#pagine-disponibili li{
+    margin: 0px 5px;
+}
+
+#attuale>div{
+    border: 1px solid #beff9d;
+    width: 30%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+/* caratteristiche row */
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* caratteristiche items dentro row */
+.items{
+    width: calc(100% / 6 - 20px);
+    margin: 0px 10px;
+    text-align: center;
+}
+
+.immagine-album{
+    position: relative;
+}
+
+.immagine-album>i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    display: none;
+    color: white;
+}
+/* immagini artisti popolari */
+.artisti-popolari img{
+    border-radius: 50%;
+}
+/* caratteristiche footer */
+footer{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #282828;
+}
+
+footer i{
+    margin: 0px 8px;
+}
+
+/* caratteristiche della barra dentro al footer */
+.barra{
+    margin: 5px;
+    height: 10px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.218);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.scorritore{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: white;
+    border-radius: 25px;
+}
+
+#volume .scorritore{
+    width: 40%;
+}
+
+.rotondo{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(100% - 8px);
+}
+/* caratteristiche div dentro footer */
+#musica-in-ascolto, #durata-canzone, #volume, #display-canzone{
+    align-items: center;
+    display: flex;
+}
+/* caratteristiche contenuto musica in ascolto */
+#musica-in-ascolto img{
+    width: 50px;
+}
+
+#titolo-canzone{
+    margin-left: 5px;
+    margin-right: 25px;
+}
+/* caratteristiche contenuto controllo canzone */
+#controllo-canzone{
+    width: 33%;
+    color: white;
+}
+
+#display-canzone{
+    justify-content: center;
+}
+
+#controllo-canzone .fa-circle-play{
+    font-size: 30px;
+}
+/* caratteristiche contenuto volume */
+#volume, #musica-in-ascolto{
+    width: 25%;
+}
+/* componenti hover */
+/* caratteristiche hover immagine dentro conteiner album */
+.immagine-album:hover img{
+    filter: brightness(0.5);
+}
+
+.immagine-album:hover i{
+    display: block;
+    z-index: 400;
+}
+/* caratteristiche hover pulsante upgrade  */
+#upgrade:hover{
+    transform: scale(1.1);
+}
+/* caratteristiche colore tag dentro progetto */
+li>a:hover, .scompari:hover, #musica-in-ascolto i:hover{
+    color: white;
+}
+
+#aggiungi:hover{
+    background-color: white;
+}
+
+#titolo-canzone a:hover{
+    color: white;
+    text-decoration: underline;
+}
+/* caratteristiche barra dentro footer */
+.barra:hover .scorritore{
+    background-color: #beff9d;
+}
+
+.barra:hover .rotondo{
+    background-color: white;
+}
+/* impostazioni 878px */
+@media all and (max-width:878px) {
+    /* caratteristiche items dentro il conteiner album  */
+    .items{
+        width: calc(100% / 4 - 20px);
+    }
+    /* caratteristiche li dentro pagine-disponibili  */
+    #pagine-disponibili li{
+        width: calc(100% / 5 - 10px);
+        margin-bottom: 10px;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+/* impostazioni 639px */
+@media all and (max-width:639px) {
+    /* caratteristiche items dentro il conteiner album  */
+    .items{
+        width: calc(100% / 2 - 20px);
+    }
+    /* caratteristiche li dentro pagine-disponibili  */
+    #pagine-disponibili li{
+        width: calc(100% / 3 - 10px);
+    }
+}
+
+/* impostazione 550px */
+@media all and (max-width:550px) {
+    /* caratteristiche nav */
+    nav{
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+        padding: 5px 10px ; 
+    }
+    #selezione-pagina img{
+        width: 100%;
+        margin: 0px;
+    }
+    #logo{
+        height: unset;
+    }
+    #logo-piccolo{
+        display: block;
+    }
+    /* caratteristiche tag dentro istallazione app */
+    #rimpicciolita{
+        justify-content: center;
+    }
+    #rimpicciolita img{
+        width: 60%;
+    }
+    #bg-colorato{
+        width: 100%;
+    }
+    /* caratteristiche che scompaiono  */
+    #logo-grande, .tag-scomparso {
+        display: none;
+    }
+    /* caratteristiche main spotify  */
+    #main-spotify, #nav-bar-main{
+        width: calc(100% - 50px);
+    }
+    #pagine-disponibili li{
+        width: calc(100% / 4 - 10px);
+    }
+}
+
+/* bonus */
+
+/* @media all and (max-width:878px) {
+    #lunga{
+        height: 160px;
+        overflow: hidden;
+    }
+}
+
+@media all and (max-width:639px) {
+    #lunga{
+        height: 218px;
+    }
+} */
+
+@media all and (max-height:220px) {
+    #nav-bar-main{
+        display: none;
+    }
+}
+
+#durata-canzone .scorritore{
+   animation-name: animazione;
+   animation-duration: 275s;
+   animation-iteration-count: 1;
+   animation-timing-function: ease-in;
+}
+
+@keyframes animazione {
+    0%{
+        width: 0px;
+    }
+
+    100%{
+        width: 100%;
+    }
+}
