@@ -307,14 +307,25 @@ li>a:hover, .scompari:hover, #musica-in-ascolto i:hover{
 }
 /* impostazioni 878px */
 @media all and (max-width:878px) {
+    /* caratteristiche items dentro il conteiner album  */
     .items{
         width: calc(100% / 4 - 20px);
+    }
+    /* caratteristiche li dentro pagine-disponibili  */
+    #pagine-disponibili li{
+        width: calc(100% / 5 - 10px);
+        margin-bottom: 10px;
     }
 }
 /* impostazioni 639px */
 @media all and (max-width:639px) {
+    /* caratteristiche items dentro il conteiner album  */
     .items{
         width: calc(100% / 2 - 20px);
+    }
+    /* caratteristiche li dentro pagine-disponibili  */
+    #pagine-disponibili li{
+        width: calc(100% / 3 - 10px);
     }
 }
 
@@ -354,5 +365,8 @@ li>a:hover, .scompari:hover, #musica-in-ascolto i:hover{
     /* caratteristiche main spotify  */
     #main-spotify, #nav-bar-main{
         width: calc(100% - 50px);
+    }
+    #pagine-disponibili li{
+        width: calc(100% / 4 - 10px);
     }
 }
