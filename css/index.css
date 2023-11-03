@@ -56,20 +56,20 @@ main{
 nav{
     width: 200px;
     height: 100%;
-    padding: 10px;
+    padding: 10px 5px 0px;
     position: relative;
     background-color: #000000;
     overflow: hidden;
 }
 
-#logo img{
-    width: 100%;
+nav li{
+    display: flex;
+    padding: 5px 0;
+    align-items: center;
 }
 
-#selezione-pagina li{
-    display: flex;
-    margin: 5px 0;
-    align-items: center;
+#logo img{
+    width: 100%;
 }
 
 #selezione-pagina img {
@@ -85,8 +85,7 @@ nav{
 }
 
 #istallazione-app{
-   position: absolute;
-   bottom: 0px;
+   height: 80px;
 }
 
 #rimpicciolita img{
@@ -100,7 +99,8 @@ nav{
 }
 
 #separino{
-    margin: 10px 0;
+    padding: 0px;
+    margin: 5px 0;
     border: 1px solid white;
 }
 /* caratteristiche pagina attuale */
@@ -113,6 +113,24 @@ nav{
 /* immagine all'attivazione di schermo 550 px */
 #logo-piccolo{
     display: none;
+}
+/* altezze tutte-playlist e div all'interno di esso */
+#tutte-playlist{
+    height: calc(100% - 80px);
+    overflow: hidden;
+}
+
+#logo{
+    height: 60px;
+}
+
+#seleziona-pagina{
+    height: 105px;
+}
+
+#playlist{
+    height: calc(100% - 175px);
+    overflow-y: scroll;
 }
 /* caratteristiche main-spotify */
 #main-spotify{
@@ -182,7 +200,6 @@ nav{
 .immagine-album{
     position: relative;
 }
-/* capire perche non va hover su icona */
 
 .immagine-album>i{
     position: absolute;
@@ -191,6 +208,7 @@ nav{
     transform: translate(-50%, -50%);
     font-size: 40px;
     display: none;
+    color: white;
 }
 /* immagini artisti popolari */
 .artisti-popolari img{
@@ -305,7 +323,7 @@ footer i:hover{
         width: 50px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        padding: 5px 10px ; 
     }
     #selezione-pagina img{
         width: 100%;
@@ -314,9 +332,8 @@ footer i:hover{
     #logo-piccolo{
         display: block;
     }
-    #istallazione-app{
-        padding: 10px;
-        text-align: center;
+    #rimpicciolita{
+        justify-content: center;
     }
     #rimpicciolita img{
         width: 60%;
@@ -334,5 +351,8 @@ footer i:hover{
     }
 }
 
-/* se si vuole utilizzare testo piu grande è sinistra destra 25% e mezzo 40% */
-
+/* @media all and (max-height:550px) {
+    #playlist{
+        overflow: auto;
+    }
+} */
