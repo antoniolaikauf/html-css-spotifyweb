@@ -325,6 +325,9 @@ li>a:hover, .scompari:hover, #musica-in-ascolto i:hover{
         font-size: 12px;
         text-align: center;
     }
+    .items:nth-child(6),.items:nth-child(5){
+        display: none;
+    }
 }
 /* impostazioni 639px */
 @media all and (max-width:639px) {
@@ -335,6 +338,9 @@ li>a:hover, .scompari:hover, #musica-in-ascolto i:hover{
     /* caratteristiche li dentro pagine-disponibili  */
     #pagine-disponibili li{
         width: calc(100% / 3 - 10px);
+    }
+    .items:nth-child(4),.items:nth-child(3){
+        display: none;
     }
 }
 
@@ -382,18 +388,6 @@ li>a:hover, .scompari:hover, #musica-in-ascolto i:hover{
 
 /* bonus */
 
-/* @media all and (max-width:878px) {
-    #lunga{
-        height: 160px;
-        overflow: hidden;
-    }
-}
-
-@media all and (max-width:639px) {
-    #lunga{
-        height: 218px;
-    }
-} */
 
 @media all and (max-height:220px) {
     #nav-bar-main{
@@ -415,5 +409,32 @@ li>a:hover, .scompari:hover, #musica-in-ascolto i:hover{
 
     100%{
         width: 100%;
+    }
+}
+
+@media all and (max-width:639px) {
+    .items:nth-child(4),.items:nth-child(3){
+        display: none;
+    }
+    #musica-in-ascolto, #volume  {
+        display: none;
+    }
+    footer{
+        justify-content: center;
+        position: relative;
+    }
+    #controllo-canzone{
+        width:40%;
+    }
+    .barra-volume{
+        display: block;
+        position: absolute;
+        right: 0px;
+    }
+}
+
+@media all and (max-width:878px) {
+    .items:nth-child(6),.items:nth-child(5){
+        display: none;
     }
 }

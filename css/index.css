@@ -273,7 +273,16 @@ footer i{
 #volume, #musica-in-ascolto{
     width: 25%;
 }
+
+#volume .barra{
+    width: 50%;
+}
+
+#volume{
+    justify-content: end;
+}
 /* componenti hover */
+
 /* caratteristiche hover immagine dentro conteiner album */
 .immagine-album:hover img{
     filter: brightness(0.5);
