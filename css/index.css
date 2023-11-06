@@ -129,6 +129,7 @@ nav li{
 #nav-bar-main{
     height: 80px;
     position: fixed;
+    top: 0px;
     width: calc(100% - 200px);
     display: flex;
     align-items: center;
