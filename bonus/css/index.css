@@ -384,6 +384,13 @@ li>a:hover, .scompari:hover, #musica-in-ascolto i:hover{
     #pagine-disponibili li{
         width: calc(100% / 4 - 10px);
     }
+     /* caratteristiche footer */
+     #musica-in-ascolto img{
+        width: 25px;
+    }
+    #musica-inascolto, #volume{
+        width: 30%;
+    }
 }
 
 /* bonus */
